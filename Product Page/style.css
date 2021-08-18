@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  background-color: #eee;
+}
+
+header{
+  background-color: white;
+}
+
+nav{
+  float: right;
+  margin-right: 100px;
+}
+
+header ::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+nav ul{
+  padding: 0;
+  list-style: none;
+}
+
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 50px;
+}
+
+nav a{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  color: navy;
+}
+
+#header-img{
+  max-width: 150px;
+  max-height: 150px;
+  float: left;
+}
