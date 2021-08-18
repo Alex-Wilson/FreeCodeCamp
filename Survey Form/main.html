@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> GamersGitJobz</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Video Game Survey!!!1!</h1>
+        <p id="description" class="description text-center">
+          I enjoy playing video games when I am not busy with other hobbies or work.
+          Please take this hardcore gaming survey to check out all of the input controls offered by HTML5!  
+        </p>
+      </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Nemo "
+          required/>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required/>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="16"
+          max="120"
+          class="form-control"
+          placeholder="Enter a number between 16 and 120"/>
+      </div>
+
+
+      <div class="form-group">
+        <p>Which type of game do you like the best?</p>
+        <select id="dropdown" name="game-type" class="form-control" required>
+          <option disabled selected value> Are there any other genres besides these lately? </option>
+          <option value="FPS">FPS</option>
+          <option value="Sports Simulation">Sports Simulation</option>
+          <option value="MOBA">MOBA</option>
+          <option value="MMO">MMO</option>
+          <option value="other">Minecraft</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Which game is the best?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Halo 3"
+            type="radio"
+            class="input-radio"
+            checked/>
+          Halo 3
+        </label>
+        <label>
+          <input
+            name="user-recommend"
+            value="Read Dead Redemption 2"
+            type="radio"
+            class="input-radio"/>
+          Read Dead Redemption 2
+        </label>
+        <label>
+          <input
+            name="user-recommend"
+            value="Dark Souls 3"
+            type="radio"
+            class="input-radio"/>
+          Dark Souls 3
+        </label>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What is your favorite feature of games?
+        </p>
+        <select id="most-like" name="features" class="form-control" required>
+          <option disabled selected value>Interactive escapism is more fun!</option>
+          <option value="competition">Competition</option>
+          <option value="making-friends">Making Friends</option>
+          <option value="memes">Memes</option>
+          <option value="microtransactions">Microtransactions</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What games would you consider buying? 
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label>
+          <input
+            name="prefer"
+            value="botw2"
+            type="checkbox"
+            class="input-checkbox"/>
+            Breath of the Wild 2
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="elden-Ring"
+            type="checkbox"
+            class="input-checkbox"/>
+          Elden Ring
+          </label>
+
+        <label>
+          <input
+            name="prefer"
+            value="madden"
+            type="checkbox"
+            class="input-checkbox"/>
+          Madden 
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="gowr"
+            type="checkbox"
+            class="input-checkbox"/>
+          God Of War: Ragarok
+          </label>
+  
+      <div class="form-group">
+        <label for="comment-text"> Enter an upcoming game you are excited for or just an idea for a fun game!</label>
+        <textarea id="comment" class="input-textarea" name="comment" 
+        placeholder="Siege/BF/Tarkov crossover? Racing Games?"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit (Nothing Happens (((YET))))
+        </button>
+      </div>
+    </form>
+    </div>
+</body>
+</html>
